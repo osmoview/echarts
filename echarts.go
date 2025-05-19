@@ -16,6 +16,8 @@ func NewEcharts() (eopt Echarts) {
 		Show: &FALSE,
 	}
 
+	eopt.Tooltip.Trigger = "axis"
+
 	eopt.Grid = Grid{
 		Show:         &FALSE,
 		Left:         "2%",
