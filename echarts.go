@@ -28,10 +28,10 @@ func NewEcharts() (eopt Echarts) {
 	}
 
 	eopt.Legend = Legend{
-		Show: &FALSE,
-		Top:  "0px",
-		Left: "16px",
-		Icon: "roundRect",
+		Show:  &FALSE,
+		Top:   "0px",
+		Right: "2%",
+		Icon:  "roundRect",
 		TextStyle: TextStyle{
 			Color:      "currentColor",
 			FontSize:   14,
