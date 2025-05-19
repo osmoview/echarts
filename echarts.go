@@ -5,30 +5,33 @@ const TimeLayoutTime = "15:04"
 const TimeLayoutDate = "2006-01-02"
 
 var (
+	_true  = true
+	_false = false
+
 	// just for a pointer
-	TRUE  = true
-	FALSE = false
+	TRUE  = &_true
+	FALSE = &_false
 )
 
 func NewEcharts() (eopt Echarts) {
 	// prepare echarts options
 	eopt.Title = Title{
-		Show: &FALSE,
+		Show: FALSE,
 	}
 
 	eopt.Tooltip.Trigger = "axis"
 
 	eopt.Grid = Grid{
-		Show:         &FALSE,
+		Show:         FALSE,
 		Left:         "2%",
 		Top:          "3%",
 		Right:        "2%",
 		Bottom:       "3%",
-		ContainLabel: &TRUE,
+		ContainLabel: TRUE,
 	}
 
 	eopt.Legend = Legend{
-		Show:  &FALSE,
+		Show:  FALSE,
 		Top:   "0px",
 		Right: "2%",
 		Icon:  "roundRect",
