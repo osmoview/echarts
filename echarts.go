@@ -23,17 +23,17 @@ func NewEcharts() (eopt Echarts) {
 
 	eopt.Grid = Grid{
 		Show:         FALSE,
-		Left:         "2%",
-		Top:          "3%",
-		Right:        "2%",
-		Bottom:       "3%",
+		Left:         "3%",
+		Top:          "4%",
+		Right:        "3%",
+		Bottom:       "4%",
 		ContainLabel: TRUE,
 	}
 
 	eopt.Legend = Legend{
 		Show:  FALSE,
 		Top:   "0px",
-		Right: "2%",
+		Right: "3%",
 		Icon:  "roundRect",
 		TextStyle: TextStyle{
 			Color:      "currentColor",
