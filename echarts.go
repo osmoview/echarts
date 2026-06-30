@@ -1,8 +1,10 @@
 package echarts
 
-const TimeLayoutDateTime = "2006-01-02 15:04"
-const TimeLayoutTime = "15:04"
-const TimeLayoutDate = "2006-01-02"
+const (
+	TimeLayoutDateTime = "2006-01-02 15:04"
+	TimeLayoutTime     = "15:04"
+	TimeLayoutDate     = "2006-01-02"
+)
 
 var (
 	_true  = true
@@ -15,10 +17,7 @@ var (
 
 func NewEcharts() (eopt Echarts) {
 	// prepare echarts options
-	eopt.Title = Title{
-		Show: FALSE,
-	}
-
+	eopt.Title.Show = FALSE
 	eopt.Tooltip.Trigger = "axis"
 
 	// eopt.Grid = Grid{
@@ -30,24 +29,24 @@ func NewEcharts() (eopt Echarts) {
 	// 	ContainLabel: TRUE,
 	// }
 
-	eopt.Legend = Legend{
-		Show:  FALSE,
-		Top:   "0px",
-		Right: "3%",
-		Icon:  "roundRect",
-		TextStyle: TextStyle{
-			Color:      "currentColor",
-			FontSize:   14,
-			FontFamily: "Mulish",
-		},
-	}
+	// eopt.Legend = Legend{
+	// 	Show:  FALSE,
+	// 	Top:   "0px",
+	// 	Right: "3%",
+	// 	Icon:  "roundRect",
+	// 	TextStyle: TextStyle{
+	// 		Color:      "currentColor",
+	// 		FontSize:   14,
+	// 		FontFamily: "Mulish",
+	// 	},
+	// }
 
-	eopt.TextStyle = TextStyle{
-		Color:           "currentColor", //"#fff",
-		FontSize:        16,
-		FontFamily:      "Mulish",
-		TextBorderWidth: 0,
-	}
+	// eopt.TextStyle = TextStyle{
+	// Color:           "currentColor", //"#fff",
+	// FontSize:        16,
+	// FontFamily:      "Mulish",
+	// TextBorderWidth: 0,
+	// }
 
 	// eopt.YAxis.Min = 0
 
